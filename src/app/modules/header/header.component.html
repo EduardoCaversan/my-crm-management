@@ -1,0 +1,13 @@
+<div class="adt-tabs">
+    <ng-container #tabsContainer>
+        <div class="item" [class.active]="activeTab === 'users'" (click)="activateTab('users')">
+            Usuários
+        </div>
+        <div class="item" [class.active]="activeTab === 'create-user'" (click)="activateTab('create-user')">
+            Criar Usuário
+        </div>
+        <div class="item" [class.active]="activeTab === 'remove-user'" (click)="activateTab('remove-user')">
+            Remover Usuário
+        </div>
+    </ng-container>
+</div>

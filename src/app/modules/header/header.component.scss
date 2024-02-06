@@ -1,0 +1,39 @@
+.adt-tabs {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+    z-index: 9999999999;
+    background-color: white;
+    transition: border 0.5s;
+
+    .item {
+      color: #8a8a8a;
+      padding: .5rem 1rem;
+      text-align: center;
+      font-size: 1.2em;
+      flex-grow: 1;
+      margin: auto;
+      transition: border 0.5s;
+      border-bottom: rgba(179, 179, 179, 0.541) 2px solid;
+      cursor: pointer;
+    }
+  
+    .item.disabled {
+      cursor: default;
+      pointer-events: none;
+      color: rgba(180, 180, 180, 0.8);
+      border-bottom: rgba(180, 180, 180, 0.3) 2px solid;
+    }
+  
+    .item.active {
+      color: crimson;
+      font-weight: 500;
+      border-bottom: crimson 2px solid;
+      transition: border 0.5s;
+    }
+  }
+  
